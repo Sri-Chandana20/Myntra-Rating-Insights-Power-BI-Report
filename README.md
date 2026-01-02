@@ -97,7 +97,7 @@ The report has 5 pages with synced slicers (Brand & Colour) for interactivity.
 
 - **Page 5:** About: Overview, objective, data source, tools used, and analyst profile.
 
-Check out the report here![https://shorturl.at/Zp97f](url)
+[Check out the report here!](https://shorturl.at/Zp97f)
 
 
 
