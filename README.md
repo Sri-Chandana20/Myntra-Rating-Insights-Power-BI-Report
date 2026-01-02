@@ -41,7 +41,28 @@ The project demonstrates end-to-end analytics: Data cleaning, querying, visualiz
 
 ### Data Source & Cleaning
 
-**Source:** [Myntra Fashion Product Dataset](https://www.kaggle.com/datasets/hiteshsuthar101/myntra-fashion-product-dataset/data)
+**Source:** [Myntra Fashion Product Dataset](https://www.kaggle.com/datasets/hiteshsuthar101/myntra-fashion-product-dataset/data) with 11 columns: index, p_id, name, price, color, brand, img, ratingCount, avg_rating, description, p_attributes.
+
+**Cleaning Process (Excel):**
+
+- **Removed Irrelevant Columns:** Deleted non-analytical fields (index, images, descriptions, p_attributes, unnamed row numbers) to focus on core data (p_id, name, price, colour, brand, ratingCount, avg_rating).
+
+- **Handled Blank Rows:** Used copy-paste values to a new sheet to eliminate empty rows, ensuring only populated records remained.
+
+- **Filtered Incomplete Records:** Applied filters to remove rows with blank ratingCount, resulting in a high-quality dataset of 355 rated products for reliable analysis.
+
+**Result:** From 14,330 raw scraped rows to 355 clean, unique products — prioritizing quality over quantity.
+
+---
+
+### Tools Used
+
+**Excel:** Initial exploration and cleaning.
+
+**MySQL:** Database storage (CREATE TABLE with data types like DECIMAL for price/avg_rating, VARCHAR for brand/colour) and querying (LOAD DATA INFILE for import, 6 analytical queries).
+
+**Power BI:** Interactive visualization (4 pages with KPIs, donut/bar charts, scatter plots, matrix; synced slicers for brand/colour).
+
 
 
 
