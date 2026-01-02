@@ -99,8 +99,58 @@ The report has 5 pages with synced slicers (Brand & Colour) for interactivity.
 
 [Check out the report here!](https://shorturl.at/Zp97f)
 
+---
 
+### DAX Measures
 
+Key measures used for KPIs:
+
+- Overall Avg Rating = CALCULATE (
+
+  AVERAGE ( myntra_cleaned_dataset[avg_rating] ), ALL ( myntra_cleaned_dataset )
+
+  )
+
+**Purpose:** Calculates the overall average product rating, ignoring slicers and filters.
+
+- Total reviews = SUM(myntra_cleaned_dataset[ratingCount])
+
+**Purpose:** Measures total customer engagement through review volume.
+
+- High-Rated Product% = DIVIDE(COUNTROWS(FILTER(myntra_cleaned_dataset,myntra_cleaned_dataset[avg_rating]>=4.5)),COUNTROWS(myntra_cleaned_dataset), 0)
+
+**Purpose:** Identifies the proportion of products rated 4.5 stars and above.
+
+- Avg Price for High Ratings = CALCULATE(AVERAGE(myntra_cleaned_dataset[price]),myntra_cleaned_dataset[avg_rating]>=4.5)
+
+**Purpose:** Shows the average price point of well-rated products.
+
+- Top Brand Rating Share =
+VAR Top3Brands =
+    TOPN (
+        3,
+        ALLSELECTED ( myntra_cleaned_dataset[brand] ),
+        CALCULATE ( AVERAGE ( myntra_cleaned_dataset[avg_rating] ) ),
+        DESC
+    )
+
+VAR HighRatedInTop3 =
+    CALCULATE (
+        COUNTROWS ( myntra_cleaned_dataset ),
+        myntra_cleaned_dataset[avg_rating] >= 4.5,
+        KEEPFILTERS ( Top3Brands )
+    )
+
+VAR TotalHighRated =
+    CALCULATE (
+        COUNTROWS ( myntra_cleaned_dataset ),
+        myntra_cleaned_dataset[avg_rating] >= 4.5
+    )
+
+RETURN
+    DIVIDE ( HighRatedInTop3, TotalHighRated, 0 )
+
+**Purpose:** Measures how much top-rated products are concentrated among the top 3 highest-rated brands.
 
 
 
