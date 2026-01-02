@@ -81,6 +81,23 @@ Brands like Divena, Fashion Depth, and Ojjasvi have excellent ratings (>=4.5) at
 
 Ahika leads reviews, but only 7.1% products are >=4.5 stars - opportunity to upgrade popular products and boost overall recommendation quality.
 
+---
+
+### Power BI Report
+
+The report has 5 pages with synced slicers (Brand & Colour) for interactivity.
+
+- **Page 1:** Overview - KPIs (overall avg rating 4.1, total reviews 58k+), rating distribution donut, top 10 brands bar chart.
+  
+- **Page 2:** Price & Color Insights - Price vs rating scatter (bubble size = reviews), avg rating/price by colour clustered charts.
+  
+- **Page 3:** Detailed Matrix - Detailed comparison (brand rows, KPI values; drill-down to colour).
+  
+- **Page 4:** Insights & Recommendations - Actionable bullets from analysis.
+
+- **Page 5:** About: Overview, objective, data source, tools used, and analyst profile.
+
+Check out the report here![https://shorturl.at/Zp97f](url)
 
 
 
