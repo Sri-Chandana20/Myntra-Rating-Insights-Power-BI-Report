@@ -45,8 +45,6 @@ The project demonstrates end-to-end analytics: Data cleaning, querying, visualiz
 
 - **Filtered Incomplete Records:** Applied filters to remove rows with blank ratingCount, resulting in a high-quality dataset of 355 rated products for reliable analysis.
 
-**Result:** From 14,330 raw scraped rows to 355 clean, unique products — prioritizing quality over quantity.
-
 ---
 
 ### Tools Used
@@ -55,7 +53,7 @@ The project demonstrates end-to-end analytics: Data cleaning, querying, visualiz
 
 **MySQL:** Database storage (CREATE TABLE with data types like DECIMAL for price/avg_rating, VARCHAR for brand/colour) and querying (LOAD DATA INFILE for import, 6 analytical queries).
 
-**Power BI:** Interactive visualization (5 pages with KPIs, donut/bar charts, scatter plots, matrix; synced slicers for brand/colour).
+**Power BI:** Interactive visualization (5 pages with KPIs, donut chart, bar charts, scatter plots, matrix; synced slicers for brand and colour).
 
 ---
 
@@ -85,13 +83,13 @@ The report has 5 pages with synced slicers (Brand & Colour) for interactivity.
 
 - **Page 1:** Overview - KPIs (overall avg rating 4.1, total reviews 58k+), rating distribution donut, top 10 brands bar chart.
   
-- **Page 2:** Price & Color Insights - Price vs rating scatter (bubble size = reviews), avg rating/price by colour clustered charts.
+- **Page 2:** Price & Color Insights - Price vs rating scatter (bubble size = reviews), avg rating & price by colour clustered charts.
   
 - **Page 3:** Detailed Matrix - Detailed comparison (brand rows, KPI values; drill-down to colour).
   
 - **Page 4:** Insights & Recommendations - Actionable bullets from analysis.
 
-- **Page 5:** About: Overview, objective, data source, tools used, and analyst profile.
+- **Page 5:** About - Overview, objective, data source, tools used, and analyst profile.
 
 [Check out the report here!](https://shorturl.at/Zp97f)
 
