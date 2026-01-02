@@ -30,10 +30,6 @@ The project demonstrates end-to-end analytics: Data cleaning, querying, visualiz
 - Limitations
   
 - DAX Measures
-  
-- Setup & Reproduction
-  
-- Contact
 
 ---
 
