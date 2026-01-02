@@ -23,12 +23,10 @@ The project demonstrates end-to-end analytics: Data cleaning, querying, visualiz
 
 - Tools Used
 
-- Analysis & Insights
+- Key Insights & Recommendations
   
 - Power BI Report
-  
-- Recommendations
-  
+    
 - Limitations
   
 - DAX Measures
@@ -61,7 +59,28 @@ The project demonstrates end-to-end analytics: Data cleaning, querying, visualiz
 
 **MySQL:** Database storage (CREATE TABLE with data types like DECIMAL for price/avg_rating, VARCHAR for brand/colour) and querying (LOAD DATA INFILE for import, 6 analytical queries).
 
-**Power BI:** Interactive visualization (4 pages with KPIs, donut/bar charts, scatter plots, matrix; synced slicers for brand/colour).
+**Power BI:** Interactive visualization (5 pages with KPIs, donut/bar charts, scatter plots, matrix; synced slicers for brand/colour).
+
+---
+
+### Key Insights & Recommendations
+
+- **Feature Ahika more in recommendations**
+
+Ahika has the most reviews (58,569) with a good 4.10 average rating - showing it more can increase clicks and sales.
+
+- **Prioritize Black and Pink colors** 
+
+Black (48,410 reviews, 4.18 rating) and Pink (44,057 reviews, 4.15 rating) are the top performers - recommend giving them more space in the recommendations sections for better engagement.
+
+- **Promote high-rated premium & niche brands** 
+
+Brands like Divena, Fashion Depth, and Ojjasvi have excellent ratings (>=4.5) at prices >1500 but low reviews - suggest featuring them in luxury or “Top Rated” sections to attract high-value customers and build trust.
+
+- **Improve quality in high-volume brands** 
+
+Ahika leads reviews, but only 7.1% products are >=4.5 stars - opportunity to upgrade popular products and boost overall recommendation quality.
+
 
 
 
