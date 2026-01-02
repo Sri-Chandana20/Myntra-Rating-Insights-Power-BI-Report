@@ -41,6 +41,7 @@ The project demonstrates end-to-end analytics: Data cleaning, querying, visualiz
 
 ### Data Source & Cleaning
 
+**Source:** [Myntra Fashion Product Dataset](https://www.kaggle.com/datasets/hiteshsuthar101/myntra-fashion-product-dataset/data)
 
 
 
