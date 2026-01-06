@@ -72,20 +72,7 @@ ORDER BY avg_rating DESC
 LIMIT 10;
 
 
--- 5. Most Common Colours in High-Rated Products (4.5+ Rating)
-
-SELECT 
-    colour, COUNT(*) AS high_rated_count
-FROM
-    myntra_cleaned_dataset
-WHERE
-    avg_rating >= 4.5
-GROUP BY colour
-ORDER BY high_rated_count DESC
-LIMIT 10;
-
-
--- 6. Price Segments vs Average Rating
+-- 5. Price Segments vs Average Rating
 
 SELECT 
     CASE
