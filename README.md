@@ -51,7 +51,7 @@ The project demonstrates end-to-end analytics: Data cleaning, querying, visualiz
 
 **Excel:** Initial exploration and cleaning.
 
-**MySQL:** Database storage (CREATE TABLE with data types like DECIMAL for price/avg_rating, VARCHAR for brand/colour) and querying (LOAD DATA INFILE for import, 6 analytical queries).
+**MySQL:** Database storage (CREATE TABLE with data types like DECIMAL for price/avg_rating, VARCHAR for brand/colour) and querying.
 
 **Power BI:** Interactive visualization (5 pages with KPIs, donut chart, bar charts, scatter plots, matrix; synced slicers for brand and colour).
 
