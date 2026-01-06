@@ -27,8 +27,6 @@ The project demonstrates end-to-end analytics: Data cleaning, querying, visualiz
   
 - Power BI Report
     
-- Limitations
-  
 - DAX Measures
 
 ---
