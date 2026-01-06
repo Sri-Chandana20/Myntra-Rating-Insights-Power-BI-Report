@@ -5,13 +5,14 @@
 <h1 align="center"> Myntra Rating Insights Report</h1>
 
 ### Overview
-- E-commerce platforms like Myntra face **challenges** in recommendation quality, where high-volume items often lack quality, leading to lower customer satisfaction.
+- E-commerce platforms like Myntra face **challenges** with recommendation quality, where popular items often lack quality, leading to unhappy customers and more returns.
 
 - This **report analyzes** a scraped Myntra fashion product dataset to identify trends in ratings, reviews, price, brand, and colour. 
 
-- The **goal** is to improve recommendation quality by balancing high-volume items with high-rated ones for better customer engagement and satisfaction.
+- The **goal** is to improve recommendations by balancing high-volume items with high-rated ones for better customer engagement and satisfaction.
 
-- This **is important because** optimized recommendations can increase sales and cut down on returns, which helps boost revenue in India's tough fashion market.
+- This **is important because** optimized recommendations can increase sales and cut down on returns, which helps boost revenue in India's competitive fashion market.
+
 
 **Original Dataset Size:** 14,330 rows (scraped Myntra Dataset).
 
