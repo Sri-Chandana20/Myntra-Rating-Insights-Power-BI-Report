@@ -72,20 +72,4 @@ ORDER BY avg_rating DESC
 LIMIT 10;
 
 
--- 5. Price Segments vs Average Rating
-
-SELECT 
-    CASE
-        WHEN price < 1000 THEN 'Budget (<1k INR)'
-        WHEN price BETWEEN 1000 AND 2500 THEN 'Mid-range (1k-2.5k INR)'
-        WHEN price > 2500 THEN 'Expensive (>2.5k INR)'
-    END AS price_segment,
-    ROUND(AVG(avg_rating), 2) AS avg_rating,
-    COUNT(*) AS product_count
-FROM
-    myntra_cleaned_dataset
-GROUP BY price_segment
-ORDER BY avg_rating DESC;
-
-
 
